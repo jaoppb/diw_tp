@@ -1,0 +1,11 @@
+header {
+    top: 0;
+}
+
+main {
+    margin-top: 80px;
+}
+
+#bio {
+    text-align: justify;
+}
