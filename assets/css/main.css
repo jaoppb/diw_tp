@@ -1,9 +1,11 @@
 header {
     top: 0;
+    z-index: 1000;
 }
 
 main {
     margin-top: 80px;
+    padding-bottom: 200px;
 }
 
 #bio {
