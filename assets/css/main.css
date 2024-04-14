@@ -11,3 +11,7 @@ main {
 #bio {
     text-align: justify;
 }
+
+#suggest img {
+    height: 600px;
+}
