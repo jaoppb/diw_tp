@@ -6,6 +6,10 @@ header {
 main {
     margin-top: 128px;
     padding-bottom: 200px;
+
+    section {
+        scroll-margin-top: 128px;
+    }
 }
 
 #bio {
