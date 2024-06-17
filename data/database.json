@@ -1,0 +1,71 @@
+{
+    "suggestions": [
+        {
+            "id": 1,
+            "title": "Understanding JavaScript Promises",
+            "description": "A comprehensive guide to understanding JavaScript promises and their use cases.",
+            "image": "https://miro.medium.com/max/875/1*K0RnOR_f5SKWB8u4YAXO0Q.png",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises"
+        },
+        {
+            "id": 2,
+            "title": "CSS Grid Layout: A Complete Guide",
+            "description": "Learn how to use CSS Grid Layout to create complex web layouts with ease.",
+            "image": "https://css-tricks.com/wp-content/uploads/2018/11/css-grid-featured.png",
+            "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
+        },
+        {
+            "id": 3,
+            "title": "Mastering React Hooks",
+            "description": "An in-depth look at React Hooks and how they can simplify your code.",
+            "image": "https://reactjs.org/logo-og.png",
+            "url": "https://reactjs.org/docs/hooks-intro.html"
+        },
+        {
+            "id": 4,
+            "title": "Building RESTful APIs with Node.js",
+            "description": "Step-by-step guide to building RESTful APIs using Node.js and Express.",
+            "image": "https://expressjs.com/images/express-facebook-share.png",
+            "url": "https://expressjs.com/en/starter/basic-routing.html"
+        },
+        {
+            "id": 5,
+            "title": "A Beginner's Guide to Web Accessibility",
+            "description": "Learn the basics of web accessibility and why it matters.",
+            "image": "https://webaim.org/articles/images/accessibility.png",
+            "url": "https://webaim.org/articles/"
+        }
+    ],
+    "coworkers": [
+        {
+            "id": 1,
+            "profile_picture": "https://avatars.githubusercontent.com/u/1?v=4",
+            "name": "Linus Torvalds",
+            "url": "https://github.com/torvalds"
+        },
+        {
+            "id": 2,
+            "profile_picture": "https://avatars.githubusercontent.com/u/2?v=4",
+            "name": "Chris Wanstrath",
+            "url": "https://github.com/defunkt"
+        },
+        {
+            "id": 3,
+            "profile_picture": "https://avatars.githubusercontent.com/u/3?v=4",
+            "name": "PJ Hyett",
+            "url": "https://github.com/pjhyett"
+        },
+        {
+            "id": 4,
+            "profile_picture": "https://avatars.githubusercontent.com/u/4?v=4",
+            "name": "Tom Preston-Werner",
+            "url": "https://github.com/mojombo"
+        },
+        {
+            "id": 5,
+            "profile_picture": "https://avatars.githubusercontent.com/u/5?v=4",
+            "name": "Will Shulman",
+            "url": "https://github.com/will"
+        }
+    ]
+}

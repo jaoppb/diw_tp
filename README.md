@@ -8,3 +8,7 @@ Este é um trabalho prático que busca a implementação de uma página web que 
 - CSS
 - [Bootstrap](https://getbootstrap.com)
 - [Fontawesome](https://fontawesome.com)
+
+# Adicional
+
+Inicie o site com `npm run test`
