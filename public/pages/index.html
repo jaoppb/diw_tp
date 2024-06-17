@@ -18,7 +18,7 @@
 	<header class="container-fluid py-3 position-fixed bg-white">
         <nav class="container navbar navbar-expand-md">
             <a href="#profile" class="navbar-brand mr-auto bg-dark-subtle py-3 px-5 rounded">
-                <h1 class="m-0">Matt Bierner</h1>
+                <h1 class="m-0 name">...</h1>
             </a>
 
             <button aria-controls="navbar-supported-content" aria-expanded="false" aria-label="Toggle Navigation"
@@ -45,56 +45,36 @@
     <main class="container-fluid">
         <section id="profile" class="container pt-3">
             <h2 class="row border-bottom border-3 border-black">Perfil</h2>
-            <div class="row fs-5 mt-4">
-                <div class="col-5 col-lg-4 col-xl-3">
+            <div class="row fs-5 mt-4 d-flex flex-wrap">
+                <div class="col-5 col-lg-4 col-xl-3 ">
                     <img class="w-100 border border-1 p-1 rounded-circle" src="../assets/img/profile.png" alt="perfil">
                 </div>
-                <div class="col-7 col-lg-8 col-xl-9 d-flex justify-content-between flex-column">
-                    <div>
-                        <span class="d-block text-primary fw-bold">mjbvz (Matt Bierner)</span>
-                        <span class="d-block my-3" id="bio">Maintainer of JS/TS in VS Code | Code 20/20 | AR/MR creator | Founder Rare Realities | Cyberdelic holdout</span>
-                    </div>
-                    <div class="col-12 d-none d-lg-flex justify-content-between mt-4">
-                        <div>
-                        <span class="d-block">
-                            <span class="fw-bold">Location: </span>
-                            Washington, USA
-                        </span>
-                            <span class="d-block">
-                            <span class="fw-bold">Site: </span>
-                            <a href="https://mattbierner.com" target="_blank">https://mattbierner.com</a>
-                        </span>
-                            <span class="d-block mt-3 fs-1">
-                            <a class="text-dark" href="https://www.youtube.com/c/code2020" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a class="text-dark" href="https://twitter.com/mattbierner" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a class="text-dark" href="https://www.linkedin.com/in/matt-bierner/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        </span>
-                        </div>
-                        <a href="https://github.com/mjbvz?tab=followers" target="_blank" class="text-decoration-none">
-                            <i class="fa-solid fa-users"></i>
-                            <span>923</span>
-                        </a>
-                    </div>
+                <div class="col-7 col-lg-5 col-xl-6">
+                    <span class="d-block text-primary fw-bold name">...</span>
+                    <span class="d-block my-3" id="bio">...</span>
                 </div>
-                <div class="col-12 d-lg-none d-flex justify-content-between mt-4">
+                <div class="col-12 col-lg-3 col-xl-3 d-flex justify-content-between mt-4">
                     <div>
                         <span class="d-block">
                             <span class="fw-bold">Location: </span>
-                            Washington, USA
+                            <span id="location">...</span>
                         </span>
                         <span class="d-block">
                             <span class="fw-bold">Site: </span>
-                            <a href="https://mattbierner.com" target="_blank">https://mattbierner.com</a>
-                        </span>
-                        <span class="d-block mt-3 fs-1">
-                            <a class="text-dark" href="https://www.youtube.com/c/code2020" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a class="text-dark" href="https://twitter.com/mattbierner" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a class="text-dark" href="https://www.linkedin.com/in/matt-bierner/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" id="site" target="_blank">...</a>
+                        </span >
+                        <span id="social-media" class="d-block mt-3 fs-1">
+                            <a class="text-dark" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a class="text-dark" href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a class="text-dark" href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </span>
                     </div>
                     <div>
-                        <i class="fa-solid fa-users"></i>
-                        <span>923</span>
+                        <a href="https://github.com/...?tab=followers" target="_blank" id="github-link"
+                            class="text-decoration-none">
+                            <i class="fa-solid fa-users"></i>
+                            <span>...</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -108,192 +88,16 @@
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div>
-                                <h3 class="card-title text-truncate"><a href="repo.html">vscode</a></h3>
-                                <h4 class="fs-6 card-subtitle mb-3 text-truncate">Forked from <a href="https://github.com/microsoft/vscode" target="_blank">microsoft/vscode</a></h4>
-                                <p class="card-text">This repository ("Code - OSS") is where we (Microsoft) develop the Visual Studio Code product. Not only do we work on code and issues here, we also publish our roadmap, monthly iteration plans, and our endgame plans. The source code here is available to everyone under the standard MIT license.</p>
+                                <h3 class="card-title text-truncate"><a href="repo.html">repo-name</a></h3>
+                                <h4 class="fs-6 card-subtitle mb-3 text-truncate">Forked from <a href="https://github.com/microsoft/vscode" target="_blank">org/repo-name</a></h4>
+                                <p class="card-text">...</p>
                             </div>
                             <div class="mt-2 fs-5">
-                                <a href="https://github.com/mjbvz/vscode/stargazers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>5</span>
+                                <a href="https://github.com" target="_blank" class="text-decoration-none me-2">
+                                    <i class="me-1 fa-regular fa-star"></i><span>0</span>
                                 </a>
-                                <a href="https://github.com/mjbvz/vscode/watchers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>4</span>
-                                </a>
-                                <a href="https://github.com/mjbvz/vscode/forks" target="_blank" class="text-decoration-none">
-                                    <i class="me-1 fa-solid fa-code-fork"></i><span>6</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="card-title text-truncate"><a href="https://github.com/mjbvz/tik-tokenizer" target="_blank">tik-tokenizer</a></h3>
-                                <h4 class="fs-6 card-subtitle mb-3 text-truncate">Forked from <a href="https://github.com/microsoft/vscode" target="_blank">microsoft/Tokenizer</a></h4>
-                                <p class="card-text">This repo contains C# and Typescript implementation of byte pair encoding(BPE) tokenizer for OpenAI LLMs, it's based on open sourced rust implementation in the OpenAI tiktoken. Both implementation are valuable to run prompt tokenization in .NET and Nodejs environment before feeding prompt into a LLM.</p>
-                            </div>
-                            <div class="mt-2 fs-5">
-                                <a href="https://github.com/mjbvz/tik-tokenizer/stargazers" target="_blank" class="me-2 text-decoration-none">
-                                    <i class="me-1 fa-regular fa-star"></i><span>2</span>
-                                </a>
-                                <span class="me-2 text-muted">
+                                <a href="https://github.com" target="_blank" class="text-decoration-none me-2">
                                     <i class="me-1 fa-regular fa-eye"></i><span>0</span>
-                                </span>
-                                <span class="text-muted">
-                                    <i class="me-1 fa-solid fa-code-fork"></i><span>0</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="card-title text-truncate"><a href="https://github.com/mjbvz/TypeScript" target="_blank">TypeSript</a></h3>
-                                <h4 class="fs-6 card-subtitle mb-3 text-truncate">Forked from <a href="https://github.com/microsoft/vscode" target="_blank">microsoft/TypeScript</a></h4>
-                                <p class="card-text">TypeScript is a language for application-scale JavaScript. TypeScript adds optional types, classes, and modules to JavaScript. TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript. Try it out at the playground, and stay up to date via our blog and Twitter account.</p>
-                            </div>
-                            <div class="mt-2 fs-5">
-                                <span class="text-muted me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>0</span>
-                                </span>
-                                <a href="https://github.com/mjbvz/TypeScript/watchers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>3</span>
-                                </a>
-                                <span class="text-muted">
-                                    <i class="me-1 fa-solid fa-code-fork"></i><span>0</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="card-title text-truncate"><a href="https://github.com/mjbvz/vscode-jupyter" target="_blank">vscode-jupyter</a></h3>
-                                <h4 class="fs-6 card-subtitle mb-3 text-truncate">Forked from <a href="https://github.com/microsoft/vscode-jupyter" target="_blank">microsoft/vscode-jupyter</a></h4>
-                                <p class="card-text">A Visual Studio Code extension that provides basic notebook support for language kernels that are supported in Jupyter Notebooks today. Many language kernels will work with no modification. To enable advanced features, modifications may be needed in the VS Code language extensions.</p>
-                            </div>
-                            <div class="mt-2 fs-5">
-                                <span class="text-muted me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>0</span>
-                                </span>
-                                <a href="https://github.com/mjbvz/vscode-jupyter/watchers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>2</span>
-                                </a>
-                                <span class="text-muted">
-                                    <i class="me-1 fa-solid fa-code-fork"></i><span>0</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="card-title text-truncate"><a href="https://github.com/mjbvz/schemastore" target="_blank">schemastore</a></h3>
-                                <h4 class="fs-6 card-subtitle mb-3 text-truncate">Forked from <a href="https://github.com/SchemaStore/schemastore" target="_blank">SchemaStore/schemastore</a></h4>
-                                <p class="card-text">The repository is meant as a universal JSON schema store, where schemas for popular JSON documents can be found.</p>
-                            </div>
-                            <div class="mt-2 fs-5">
-                                <span class="text-muted me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>0</span>
-                                </span>
-                                <a href="https://github.com/mjbvz/schemastore/watchers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>3</span>
-                                </a>
-                                <span class="text-muted">
-                                    <i class="me-1 fa-solid fa-code-fork"></i><span>0</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="card-title text-truncate"><a href="https://github.com/mjbvz/wmr" target="_blank">wmr</a></h3>
-                                <h4 class="fs-6 card-subtitle mb-3 text-truncate">Forked from <a href="https://github.com/preactjs/wmr" target="_blank">preactjs/wmr</a></h4>
-                                <p class="card-text"><strong>The tiny all-in-one development tool for modern web apps</strong>, in a single 2mb file with no dependencies.</p>
-                                <p class="card-text">All the features you'd expect and more, from development to production:</p>
-                            </div>
-                            <div class="mt-2 fs-5">
-                                <span class="text-muted me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>0</span>
-                                </span>
-                                <a href="https://github.com/mjbvz/wmr/watchers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>2</span>
-                                </a>
-                                <span class="text-muted">
-                                    <i class="me-1 fa-solid fa-code-fork"></i><span>0</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="card-title text-truncate"><a href="https://github.com/mjbvz/STL" target="_blank">STL</a></h3>
-                                <h4 class="fs-6 card-subtitle mb-3 text-truncate">Forked from <a href="https://github.com/microsoft/STL" target="_blank">microsoft/STL</a></h4>
-                                <p class="card-text">This is the official repository for Microsoft's implementation of the C++ Standard Library (also known as the STL), which ships as part of the MSVC toolset and the Visual Studio IDE.</p>
-                            </div>
-                            <div class="mt-2 fs-5">
-                                <span class="text-muted me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>0</span>
-                                </span>
-                                <a href="https://github.com/mjbvz/STL/watchers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>2</span>
-                                </a>
-                                <span class="text-muted">
-                                    <i class="me-1 fa-solid fa-code-fork"></i><span>0</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="card-title text-truncate"><a href="https://github.com/mjbvz/vscode-markdown-footnotes" target="_blank">vscode-markdown-footnotes</a></h3>
-                                <p class="card-text">Adds [^1] footnote syntax support to VS Code's built-in Markdown preview</p>
-                            </div>
-                            <div class="mt-2 fs-5">
-                                <a href="https://github.com/mjbvz/vscode-markdown-footnotes/stargazers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>23</span>
-                                </a>
-                                <a href="https://github.com/mjbvz/vscode-markdown-footnotes/watchers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>4</span>
-                                </a>
-                                <a href="https://github.com/mjbvz/vscode-markdown-footnotes/forks" target="_blank" class="text-decoration-none">
-                                    <i class="me-1 fa-solid fa-code-fork"></i><span>2</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="card-title text-truncate"><a href="https://github.com/mjbvz/electron-webview-leak" target="_blank">electron-webview-leak</a></h3>
-                                <p class="card-text">Demonstrates electron webview leaking</p>
-                                <p class="card-text">Bug Webview appears to be leak</p>
-                            </div>
-                            <div class="mt-2 fs-5">
-                                <span class="text-muted me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>0</span>
-                                </span>
-                                <a href="https://github.com/mjbvz/electron-webview-leak/watchers" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>3</span>
                                 </a>
                                 <span class="text-muted">
                                     <i class="me-1 fa-solid fa-code-fork"></i><span>0</span>
@@ -313,48 +117,22 @@
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#suggested-content" data-bs-slide-to="0" class="active bg-dark" aria-label="Suggestion 1"></button>
                         <button type="button" data-bs-target="#suggested-content" data-bs-slide-to="1" class="bg-dark" aria-label="Suggestion 2"></button>
-                        <button type="button" data-bs-target="#suggested-content" data-bs-slide-to="2" class="bg-dark" aria-label="Suggestion 3"></button>
-                        <button type="button" data-bs-target="#suggested-content" data-bs-slide-to="3" class="bg-dark" aria-label="Suggestion 4"></button>
-                        <button type="button" data-bs-target="#suggested-content" data-bs-slide-to="4" class="bg-dark" aria-label="Suggestion 5"></button>
                     </div>
                     <div class="carousel-inner">
-                        <a href="https://uxdesign.cc/why-ui-designers-should-understand-flexbox-and-css-grid-e236a9dec37a" target="_blank" class="carousel-item active">
-                            <img src="../assets/img/banner/1.webp" alt="Modern CSS Layout for UI Designers"
-                                 class="w-100 d-block object-fit-cover">
+                        <a href="#" target="_blank" class="carousel-item active">
+                            <img src="../assets/img/banner/1.webp" alt=""
+                                 class="w-100 d-block object-fit-cover ratio ratio-16x9">
                             <div class="text-center mt-4 text-dark carousel text-decoration-underline">
-                                <h3>Why UI designers should understand Flexbox and CSS Grid</h3>
-                                <p>Or bye bye, rigid column grid layout</p>
+                                <h3>Title</h3>
+                                <p>Description</p>
                             </div>
                         </a>
-                        <a href="https://forbes.com.br/forbes-tech/2023/06/o-que-e-computacao-quantica" target="_blank" class="carousel-item">
-                            <img src="../assets/img/banner/2.webp" alt="O que é computação quântica?"
-                                 class="w-100 d-block object-fit-cover">
-                            <div class="text-center mt-4 text-dark text-decoration-underline">
-                                <h3>O que é computação quântica?</h3>
-                                <p>Tecnologia pode auxiliar no controle de informações armazenadas em sistemas quânticos e na elaboração de algoritmos e softwares</p>
-                            </div>
-                        </a>
-                        <a href="https://www1.folha.uol.com.br/tec/2024/04/openai-e-meta-preparam-modelos-de-ia-capazes-de-raciocinar-e-planejar.shtml" target="_blank" class="carousel-item">
-                            <img src="../assets/img/banner/3.jpg" alt="O que é computação quântica?"
-                                 class="w-100 d-block object-fit-cover">
-                            <div class="text-center mt-4 text-dark text-decoration-underline">
-                                <h3>OpenAI e Meta preparam modelos de IA capazes de raciocinar e planejar</h3>
-                                <p>Atualizações fazem parte de onda de grandes modelos de linguagem a ser lançados neste ano</p>
-                            </div>
-                        </a>
-                        <a href="https://medium.com/better-programming/7-software-development-principles-that-should-be-embraced-daily-c26a94ec4ecc" target="_blank" class="carousel-item">
-                            <img src="../assets/img/banner/4.jpg" alt="Desenho arquitetônico"
-                                 class="w-100 d-block object-fit-cover">
-                            <div class="text-center mt-4 text-dark text-decoration-underline">
-                                <h3>7 Software Development Principles That Should Be Embraced Daily</h3>
-                                <p>"KISS", "DRY", "YAGNI", and more</p>
-                            </div>
-                        </a>
-                        <a href="https://canaltech.com.br/e-reader/como-funciona-o-kindle-o-leitor-de-livros-digitais-da-amazon/" target="_blank" class="carousel-item">
-                            <img src="../assets/img/banner/5.jpeg" alt="Kindle"
-                                 class="w-100 d-block object-fit-cover">
-                            <div class="text-center mt-4 text-dark text-decoration-underline">
-                                <h3>Como funciona o Kindle | Famoso e-reader da Amazon</h3>
+                        <a href="#" target="_blank" class="carousel-item active">
+                            <img src="../assets/img/banner/2.webp" alt=""
+                                 class="w-100 d-block object-fit-cover ratio ratio-16x9">
+                            <div class="text-center mt-4 text-dark carousel text-decoration-underline">
+                                <h3>Title</h3>
+                                <p>Description</p>
                             </div>
                         </a>
                     </div>
@@ -373,24 +151,8 @@
             <h2 class="row border-bottom border-3 border-black">Colegas de Trabalho</h2>
             <div class="row">
                 <a href="#" class="pt-3 col-xl-2 col-lg-3 col-md-4 col-6 d-flex flex-column align-items-center">
-                    <img class="d-block w-100 rounded-circle border border-1 p-1" src="../assets/img/coworker/chiatiah_rayan.jpeg" alt="Chiatiah Rayan">
-                    <p class="text-primary mt-2 fs-4 text-truncate">Chiatiah Rayan</p>
-                </a>
-                <a href="#" class="pt-3 col-xl-2 col-lg-3 col-md-4 col-6 d-flex flex-column align-items-center">
-                    <img class="d-block w-100 rounded-circle border border-1 p-1" src="../assets/img/coworker/alizay.jpeg" alt="Alizay Ayesha">
-                    <p class="text-primary mt-2 fs-4 text-truncate">Alizay Ayesha</p>
-                </a>
-                <a href="#" class="pt-3 col-xl-2 col-lg-3 col-md-4 col-6 d-flex flex-column align-items-center">
-                    <img class="d-block w-100 rounded-circle border border-1 p-1" src="../assets/img/coworker/ayushdama.png" alt="Ayush Dama">
-                    <p class="text-primary mt-2 fs-4 text-truncate">Ayush Dama</p>
-                </a>
-                <a href="#" class="pt-3 col-xl-2 col-lg-3 col-md-4 col-6 d-flex flex-column align-items-center">
-                    <img class="d-block w-100 rounded-circle border border-1 p-1" src="../assets/img/coworker/bima-putra.jpeg" alt="Bima Putra Lamanda">
-                    <p class="text-primary mt-2 fs-4 text-truncate">Bima Putra Lamanda</p>
-                </a>
-                <a href="#" class="pt-3 col-xl-2 col-lg-3 col-md-4 col-6 d-flex flex-column align-items-center">
-                    <img class="d-block w-100 rounded-circle border border-1 p-1" src="../assets/img/coworker/maxlestage.jpeg" alt="Max Lestage">
-                    <p class="text-primary mt-2 fs-4 text-truncate">Max Lestage</p>
+                    <img class="d-block w-100 rounded-circle border border-1 p-1 ratio ratio-1x1" src="../assets/img/profile.png" alt="">
+                    <p class="text-primary mt-2 fs-4 text-truncate">Name</p>
                 </a>
             </div>
         </section>
