@@ -20,7 +20,6 @@
             <a href="#profile" class="navbar-brand mr-auto bg-dark-subtle py-3 px-5 rounded">
                 <h1 class="m-0 name">...</h1>
             </a>
-
             <button aria-controls="navbar-supported-content" aria-expanded="false" aria-label="Toggle Navigation"
                     class="navbar-toggler" data-bs-target="#navbar-items"
                     data-bs-toggle="collapse" type="button">
@@ -47,13 +46,13 @@
             <h2 class="row border-bottom border-3 border-black">Perfil</h2>
             <div class="row fs-5 mt-4 d-flex flex-wrap">
                 <div class="col-5 col-lg-4 col-xl-3 ">
-                    <img class="w-100 border border-1 p-1 rounded-circle" src="../assets/img/profile.png" alt="perfil">
+                    <img class="picture w-100 border border-1 p-1 rounded-circle" src="../assets/img/profile.png" alt="perfil">
                 </div>
-                <div class="col-7 col-lg-5 col-xl-6">
+                <div class="col-7 col-lg-4 col-xl-5">
                     <span class="d-block text-primary fw-bold name">...</span>
                     <span class="d-block my-3" id="bio">...</span>
                 </div>
-                <div class="col-12 col-lg-3 col-xl-3 d-flex justify-content-between mt-4">
+                <div class="col-12 col-lg-4 col-xl-4 mt-4 mt-lg-0 d-lg-block d-flex justify-content-between">
                     <div>
                         <span class="d-block">
                             <span class="fw-bold">Location: </span>
@@ -61,19 +60,14 @@
                         </span>
                         <span class="d-block">
                             <span class="fw-bold">Site: </span>
-                            <a href="#" id="site" target="_blank">...</a>
-                        </span >
-                        <span id="social-media" class="d-block mt-3 fs-1">
-                            <a class="text-dark" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a class="text-dark" href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a class="text-dark" href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a id="site" target="_blank">...</a>
                         </span>
                     </div>
                     <div>
-                        <a href="https://github.com/...?tab=followers" target="_blank" id="github-link"
+                        <a href="https://github.com/...?tab=followers" target="_blank" id="followers-link"
                             class="text-decoration-none">
                             <i class="fa-solid fa-users"></i>
-                            <span>...</span>
+                            <span>0</span>
                         </a>
                     </div>
                 </div>
@@ -81,9 +75,10 @@
         </section>
         <section id="repo" class="container mt-5">
             <div class="row">
-                <h2 class="p-0 border-bottom border-3 border-black">Repositórios (<span>9</span>)</h2>
+                <h2 class="p-0 border-bottom border-3 border-black">Repositórios (<span class="quantity">0</span>)</h2>
             </div>
-            <div class="row g-3 mt-1">
+            <div class="row g-3 mt-1" style="max-height: calc(100vh - 128px - 100px); overflow-y: auto;">
+                <!-- Repo Card Template
                 <div class="col col-12 col-md-6 col-xl-4 col-xxl-3">
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column justify-content-between">
@@ -94,10 +89,10 @@
                             </div>
                             <div class="mt-2 fs-5">
                                 <a href="https://github.com" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-star"></i><span>0</span>
+                                    <i class="me-1 fa-regular fa-star"></i><span>2</span>
                                 </a>
                                 <a href="https://github.com" target="_blank" class="text-decoration-none me-2">
-                                    <i class="me-1 fa-regular fa-eye"></i><span>0</span>
+                                    <i class="me-1 fa-regular fa-eye"></i><span>5</span>
                                 </a>
                                 <span class="text-muted">
                                     <i class="me-1 fa-solid fa-code-fork"></i><span>0</span>
@@ -105,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="suggest" class="container mt-5">
