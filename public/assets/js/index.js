@@ -18,13 +18,14 @@ async function loadFromGitHub() {
 
     const repoSection = document.querySelector("#repo > div:nth-child(2)");
 
-    githubAPIService.getUser(true).then(userData => {
-        console.log(userData);
-
-        headerName.innerText = userData.name;
+    githubAPIService.getUser().then(userData => {
+        if(userData.name) {
+            headerName.innerText = userData.name;
+            profileName.innerText = `${userData.login} (${userData.name})`;
+        } else {
+            headerName.innerText = profileName.innerText = userData.login;        }
 
         profilePicture.src = userData.avatar_url;
-        profileName.innerText = `${userData.login} (${userData.name})`;
         if(userData.bio) profileDescription.innerText = userData.bio;
         if(userData.location) profileLocation.innerText = userData.location;
         if(userData.blog) profileSite.innerText = profileSite.href = userData.blog;

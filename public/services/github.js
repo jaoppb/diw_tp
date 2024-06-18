@@ -1,7 +1,7 @@
 export default class GithubAPIService {
     constructor() {
         this.urlBase = 'https://api.github.com';
-        this.userName = 'BGLuis';
+        this.userName = 'preston';
         this.headers = {};
         this.ready = false;
         this.readyCallbacks = [];
@@ -11,10 +11,6 @@ export default class GithubAPIService {
             this.generateHeaders();
             this.setReady();
         });
-    }
-
-    getUserName() {
-        return this.userName;
     }
 
     setReady() {
