@@ -4,14 +4,14 @@
             "id": 1,
             "title": "Understanding JavaScript Promises",
             "description": "A comprehensive guide to understanding JavaScript promises and their use cases.",
-            "image": "https://miro.medium.com/max/875/1*K0RnOR_f5SKWB8u4YAXO0Q.png",
+            "image": "https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdnmlujw039fw5dtvowu6.jpg",
             "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises"
         },
         {
             "id": 2,
             "title": "CSS Grid Layout: A Complete Guide",
             "description": "Learn how to use CSS Grid Layout to create complex web layouts with ease.",
-            "image": "https://css-tricks.com/wp-content/uploads/2018/11/css-grid-featured.png",
+            "image": "../assets/img/banner/1.webp",
             "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
         },
         {
@@ -32,7 +32,7 @@
             "id": 5,
             "title": "A Beginner's Guide to Web Accessibility",
             "description": "Learn the basics of web accessibility and why it matters.",
-            "image": "https://webaim.org/articles/images/accessibility.png",
+            "image": "https://secure.touchnet.com/C20206_ustores/web/uploaded_images/store_74/WebAim.jpg",
             "url": "https://webaim.org/articles/"
         }
     ],

@@ -1,8 +1,10 @@
 import GithubAPIService from "../../services/github.js";
+import JSONServerService from "../../services/json_server.js";
 
 const githubAPIService = new GithubAPIService();
+const jsonServerService = new JSONServerService();
 
-async function load() {
+async function loadFromGitHub() {
     const headerName         = document.querySelector("header .name");
 
     const profilePicture     = document.querySelector("#profile .picture");
@@ -155,7 +157,86 @@ async function loadRepos(reposHolder, reposData) {
     }
 }
 
+async function loadSuggestions() {
+    const indicators = document.querySelector("#suggested-content .carousel-indicators");
+
+    let nextID = 0;
+    function generateIndicator() {
+        const indicator = document.createElement("button");
+        indicator.type = "button";
+        indicator.setAttribute("data-bs-target", "#suggested-content");
+        indicator.setAttribute("data-bs-slide-to", nextID);
+        indicator.classList.add("bg-dark");
+        if(nextID === 0) indicator.classList.add("active");
+        indicator.ariaLabel = `Suggestion ${nextID + 1}`;
+        indicators.appendChild(indicator);
+        nextID++;
+    }
+
+    const carouselContent = document.querySelector("#suggested-content .carousel-inner");
+    function generateInner(link, imageURL, title, description) {
+        const inner = document.createElement("a");
+        inner.href = link;
+        inner.target = "_blank";
+        inner.classList.add("carousel-item");
+        if(nextID === 0) inner.classList.add("active");
+
+        const image = document.createElement("img");
+        image.src = imageURL;
+        image.classList.add("w-100", "d-block", "object-fit-cover", "ratio", "ratio-16x9");
+
+        const info = document.createElement("div");
+        info.classList.add("text-center", "mt-4", "text-dark", "carousel", "text-decoration-underline");
+
+        const titleElement = document.createElement("h3");
+        titleElement.innerText = title;
+
+        const descriptionElement = document.createElement("p");
+        descriptionElement.innerText = description;
+
+        info.append(titleElement, descriptionElement);
+        inner.append(image, info);
+        carouselContent.appendChild(inner);
+    }
+
+    const suggestions = await jsonServerService.getSuggestions();
+
+    suggestions.forEach(suggestion => {
+        generateInner(suggestion.url, suggestion.image, suggestion.title, suggestion.description);
+        generateIndicator();
+    });
+}
+
+async function loadCoworkers() {
+    const coworkersHolder = document.querySelector("#coworkers > .row:nth-child(2)");
+    function generateCoworker(name, imageURL, githubLink) {
+        const coworker = document.createElement("a");
+        coworker.href = githubLink;
+        coworker.classList.add("pt-3", "col-xl-2", "col-lg-3", "col-md-4", "col-6", "d-flex", "flex-column", "align-items-center");
+
+        const profilePicture = document.createElement("img");
+        profilePicture.src = imageURL;
+        profilePicture.classList.add("d-block", "w-100", "rounded-circle", "border", "border-1", "p-1", "ratio", "ratio-1x1");
+
+        const nameElement = document.createElement("p");
+        nameElement.classList.add("text-primary", "mt-2", "fs-4", "text-truncate");
+        nameElement.innerText = name;
+
+        coworker.append(profilePicture, nameElement);
+        coworkersHolder.appendChild(coworker);
+    }
+
+    const coworkers = await jsonServerService.getCoworkers();
+
+    coworkers.forEach(coworker => {
+        generateCoworker(coworker.name, coworker.profile_picture, coworker.url);
+    });
+}
+
 window.addEventListener("load", () => {
-    if(!githubAPIService.ready) githubAPIService.whenReady(load);
-    load().then();
+    if(!githubAPIService.ready) githubAPIService.whenReady(loadFromGitHub);
+    loadFromGitHub().then();
+
+    loadSuggestions().then();
+    loadCoworkers().then();
 });

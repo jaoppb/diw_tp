@@ -1,3 +1,32 @@
+.loading {
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: calc(50% - 40px);
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border: 10px solid black;
+        border-radius: 100%;
+        border-top-color: white;
+        border-bottom-color: white;
+        animation: spin 2s infinite;
+    }
+
+    &:has(~ *) {
+        display: none;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
 header {
     top: 0;
     z-index: 1000;
