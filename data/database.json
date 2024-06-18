@@ -9,10 +9,10 @@
         },
         {
             "id": 2,
-            "title": "CSS Grid Layout: A Complete Guide",
-            "description": "Learn how to use CSS Grid Layout to create complex web layouts with ease.",
+            "title": "Why UI designers should understand Flexbox and CSS Grid",
+            "description": "Or bye bye, rigid column grid layout",
             "image": "../assets/img/banner/1.webp",
-            "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
+            "url": "https://uxdesign.cc/why-ui-designers-should-understand-flexbox-and-css-grid-e236a9dec37a"
         },
         {
             "id": 3,
@@ -27,19 +27,12 @@
             "description": "Step-by-step guide to building RESTful APIs using Node.js and Express.",
             "image": "https://expressjs.com/images/express-facebook-share.png",
             "url": "https://expressjs.com/en/starter/basic-routing.html"
-        },
-        {
-            "id": 5,
-            "title": "A Beginner's Guide to Web Accessibility",
-            "description": "Learn the basics of web accessibility and why it matters.",
-            "image": "https://secure.touchnet.com/C20206_ustores/web/uploaded_images/store_74/WebAim.jpg",
-            "url": "https://webaim.org/articles/"
         }
     ],
     "coworkers": [
         {
             "id": 1,
-            "profile_picture": "https://avatars.githubusercontent.com/u/1?v=4",
+            "profile_picture": "https://avatars.githubusercontent.com/u/1024025?v=4",
             "name": "Linus Torvalds",
             "url": "https://github.com/torvalds"
         },
@@ -57,13 +50,13 @@
         },
         {
             "id": 4,
-            "profile_picture": "https://avatars.githubusercontent.com/u/4?v=4",
+            "profile_picture": "https://avatars.githubusercontent.com/u/1?v=4",
             "name": "Tom Preston-Werner",
             "url": "https://github.com/mojombo"
         },
         {
             "id": 5,
-            "profile_picture": "https://avatars.githubusercontent.com/u/5?v=4",
+            "profile_picture": "https://avatars.githubusercontent.com/u/1973?v=4",
             "name": "Will Shulman",
             "url": "https://github.com/will"
         }
