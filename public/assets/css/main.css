@@ -30,6 +30,11 @@
 header {
     top: 0;
     z-index: 1000;
+
+    .name {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 }
 
 main {
@@ -47,6 +52,14 @@ main {
 
 #suggest img {
     height: 240px;
+}
+
+@media screen and (device-width < 992px) {
+    header {
+        .name {
+            max-width: 200px;
+        }
+    }
 }
 
 @media screen and (device-width >= 992px) {
