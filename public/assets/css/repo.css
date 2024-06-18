@@ -1,0 +1,5 @@
+#topics {
+    span:first-child:has(~ *) {
+        display: none;
+    }
+}

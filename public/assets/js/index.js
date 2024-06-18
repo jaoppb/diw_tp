@@ -92,7 +92,11 @@ async function loadRepos(reposHolder, reposData) {
 
             githubAPIService.getRepo(repo.name).then(repoFull => {
                 cardForkLink.innerText = repoFull.parent.full_name;
+                cardForkLink.href = repoFull.parent.html_url;
             }).catch(err => {});
+
+
+            cardTop.appendChild(cardSubTitle);
         }
 
         const cardDescription = document.createElement("p");
@@ -146,7 +150,7 @@ async function loadRepos(reposHolder, reposData) {
         }
 
         const cardForksIcon = document.createElement("i");
-        cardForksIcon.classList.add("me-1", "fa-regular", "fa-eye");
+        cardForksIcon.classList.add("me-1", "fa-solid", "fa-code-fork");
         const cardForksCount = document.createElement("span");
         cardForksCount.innerText = repo.forks;
         cardForks.append(cardForksIcon, cardForksCount);
