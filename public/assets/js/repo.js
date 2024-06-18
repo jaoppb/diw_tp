@@ -4,8 +4,11 @@ const repoName = new URLSearchParams(window.location.search).get("name");
 const githubAPIService = new GithubAPIService();
 
 async function loadInfo() {
-    document.querySelector("#profile-name")
-        .innerText = githubAPIService.getUserName();
+    githubAPIService.getUser().then(userData => {
+        const headerName = document.querySelector("#profile-name");
+        if(userData.name) headerName.innerText = userData.name;
+        else headerName.innerText = userData.login;
+    });
 
     const name = document.querySelector("#repo-name");
     const description = document.querySelector("#repo-description");
@@ -24,7 +27,8 @@ async function loadInfo() {
     creationDate.innerText = date.toLocaleDateString();
 
     language.innerText = repoInfo.language;
-    license.innerText = repoInfo.license.name;
+
+    if(repoInfo.license) license.innerText = repoInfo.license.name;
 
     link.target = "_blank";
     link.href = link.innerText = repoInfo.html_url;

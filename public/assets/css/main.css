@@ -48,6 +48,14 @@ main {
 
 #bio {
     text-align: justify;
+    white-space: wrap;
+    word-wrap: break-word;
+}
+
+#location,
+#site{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #suggest img {

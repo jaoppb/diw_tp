@@ -11,4 +11,6 @@ Este é um trabalho prático que busca a implementação de uma página web que 
 
 # Adicional
 
+Instale as dependências com `npm install`; e
+
 Inicie o site com `npm run test`
