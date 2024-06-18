@@ -16,4 +16,6 @@ na pasta `./public/services`, e insira dentro do arquivo o token.
 
 Instale as dependências com `npm install`; e
 
+Instale as dependências com `npm install`; e
+
 Inicie o site com `npm run test`
