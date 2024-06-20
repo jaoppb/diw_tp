@@ -13,6 +13,7 @@ async function loadFromGitHub() {
     const profileLocation    = document.querySelector("#location");
     const profileSite        = document.querySelector("#site");
     const profileFollowers   = document.querySelector("#followers-link");
+    const profileMedia       = document.querySelector("#social-media");
 
     const repoQuantity       = document.querySelector("#repo .quantity");
 
@@ -31,6 +32,19 @@ async function loadFromGitHub() {
         if(userData.blog) profileSite.innerText = profileSite.href = userData.blog;
         profileFollowers.href = `${userData.html_url}?tab=followers`;
         profileFollowers.children[1].innerText = userData.followers;
+
+        githubAPIService.getSocialMedia().then(socialMedia => {
+            socialMedia.forEach(each => {
+                const link = document.createElement("a");
+                link.href = each.url;
+                link.target = "_blank";
+                link.classList.add("p-1", "fs-2");
+                const icon = document.createElement("i");
+                icon.classList.add("fa-brands", `fa-${each.provider}`)
+                link.appendChild(icon);
+                profileMedia.appendChild(link);
+            });
+        });
 
         repoQuantity.innerText = userData.public_repos;
 

@@ -1,7 +1,7 @@
 export default class GithubAPIService {
     constructor() {
         this.urlBase = 'https://api.github.com';
-        this.userName = 'preston';
+        this.userName = 'kamranahmedse';
         this.headers = {};
         this.ready = false;
         this.readyCallbacks = [];
@@ -30,7 +30,7 @@ export default class GithubAPIService {
         const init = {
             method: "GET",
             headers: this.headers,
-        }
+        };
         const user = await fetch(`${this.urlBase}/users/${this.userName}`, init);
 
         if(!user.ok) throw new Error("Falha ao buscar o usuário");
@@ -38,11 +38,23 @@ export default class GithubAPIService {
         return user.json();
     }
 
+    async getSocialMedia() {
+        const init = {
+            method: "GET",
+            headers: this.headers
+        };
+        const socialMedia = await fetch(`${this.urlBase}/users/${this.userName}/social_accounts`);
+
+        if(!socialMedia.ok) throw new Error("Falha ao buscar as redes sociais");
+
+        return socialMedia.json();
+    }
+
     async getRepos(page = 1) {
         const init = {
             method: "GET",
             headers: this.headers,
-        }
+        };
         const repos = await fetch(`${this.urlBase}/users/${this.userName}/repos?per_page=100&page=${page}&sort=updated`, init);
 
         if(!repos.ok) throw new Error("Falha ao buscar repositórios");
